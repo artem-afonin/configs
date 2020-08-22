@@ -1,0 +1,14 @@
+[alias]
+	hist = log --oneline --decorate --graph --all
+[user]
+	name = Artem Afonin
+	email = artem@azul.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[http]
+	postBuffer = 524288000
