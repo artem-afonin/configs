@@ -1,6 +1,6 @@
 set number
 set linebreak
-set textwidth=100
+""set textwidth=100
 set showmatch
 
 set hlsearch
