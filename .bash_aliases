@@ -7,3 +7,4 @@ alias gs='git status'
 alias gd='git diff'
 alias gp='git pull'
 alias gl='git log --pretty=format:"%C(green)[%h]%C(reset) %s %C(bold red)%an%C(reset)%C(bold blue)%d%C(reset)" --graph --date=short'
+alias mc="PROMPT_COMMAND=\"history -a; history -r\" $(which mc); history -r"
