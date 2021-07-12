@@ -34,8 +34,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    UPTIME=$(cat /proc/loadavg | awk '{print $1" "$2" "$3}')
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[01;34m\] on \[\033[01;35m\]\h ($UPTIME)\[\033[01;34m\] in \[\033[01;34m\]\[\033[01;33m\]$PWD\[\033[00m\]'
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[01;34m\] on \[\033[01;35m\]\h ($(cat /proc/loadavg | awk "{print \$1\" \"\$2\" \"\$3}"))\[\033[01;34m\] in \[\033[01;34m\]\[\033[01;33m\]$PWD\[\033[00m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w'
 fi
